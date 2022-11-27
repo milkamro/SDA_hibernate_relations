@@ -1,10 +1,7 @@
 package pl.sda.hibernate.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.Formula;
 
 import java.util.Set;
@@ -36,6 +33,9 @@ public class Student {
 
     // RELACJE
 @OneToMany(mappedBy = "uczen")
+// @ToStringExclude opcjonalnie, nie musi byc z obu stron jak to nizej
+@EqualsAndHashCode.Exclude
+
     private Set<Ocena> oceny;
 
 }

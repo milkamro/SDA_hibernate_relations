@@ -2,11 +2,8 @@ package pl.sda.hibernate;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import pl.sda.hibernate.model.HibernateUtil;
 import pl.sda.hibernate.model.Student;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 public class Main_dodajStudenta {
